@@ -1,0 +1,15 @@
+{
+  "name": "zodiacapp",
+  "version": "1.0.0",
+  "description": "Making Zodiac application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Afreen Ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
