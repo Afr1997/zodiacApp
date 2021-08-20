@@ -75,19 +75,20 @@ var zodiacs=[
         image:"/images/Pices.jfif",
         month:"Feb 19  to Mar 20",
         description:"Pisces, you’re ruled by Neptune, the God of the Seas in Roman mythology. Neptune represents dreams, the imagination and all things spiritual. You’re overflowing with creative energy and reject the hyper-realistic. You prefer to exist in the clouds, floating above the rest of the world as you toe the line between fantasy and reality. It’s existing in this dream-like state that makes you so special, Pisces. You’re in touch with a deep level of emotion and connect to others through your ability to perceive and empathize."
-    }
+    },
     
 ]
 function getData()
-
 {
     var userSearch=document.getElementById('user-search').value.toLowerCase();
     for(var i=0;i<zodiacs.length;i++)
     {
         if(userSearch===zodiacs[i].name.toLowerCase())
+        {
         document.getElementById('name').innerHTML=zodiacs[i].name;
         document.getElementById('date').innerHTML=zodiacs[i].month;
         document.getElementById('img').src=zodiacs[i].image;
         document.getElementById('text-result').innerHTML=zodiacs[i].description;
     }
+}
 }
